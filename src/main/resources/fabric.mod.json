@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autosetting",
+  "version": "${version}",
+  "name": "MixerGrief",
+  "description": "MixerGrief — клиентский мод для модерации: меню серверов с аватарами, Target HUD, колесо действий, AutoSpeck, AutoMute, reports-list, Freelook, Fullbright, шаблоны проверки и автокопирование AnyDesk.",
+  "authors": [
+    "Scally_Milano"
+  ],
+  "license": "MIT",
+  "icon": "assets/autosetting/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.autosetting.AutoSettingClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "autosetting.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
